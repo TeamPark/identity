@@ -10,7 +10,6 @@ public class IdentityEntity implements Serializable {
 	private String email;
 	
 	public IdentityEntity(Long id, String email) {
-		super();
 		this.id = id;
 		this.email = email;
 	}

@@ -1,26 +1,20 @@
 package br.com.identity.core.model;
 
+import javax.inject.Inject;
+
 import br.com.identity.core.dto.IdentityDTO;
 import br.com.identity.core.repository.IdentityRepository;
 
+@ByEmail
 public class SearcherByEmail implements Searcher {
 	
-//	@Inject
-//	private IdentityRepository repository;
+	@Inject
+	private IdentityRepository repository;
 	
-	private String email;
-	
-	public SearcherByEmail(String email) {
-		super();
-		this.email = email;
-	}
-
 	@Override
-	public IdentityDTO search() {
+	public IdentityDTO search(String email) {
 		
-		final IdentityRepository repository = new IdentityRepository();
-		
-		final Identity identity = repository.findByEmail(this.email);
+		final Identity identity = repository.findByEmail(email);
 		
 		return convertModelToDTO(identity);
 	}

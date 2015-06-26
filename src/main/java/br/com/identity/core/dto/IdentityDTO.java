@@ -10,7 +10,6 @@ public class IdentityDTO implements Serializable {
 	private String email;
 	
 	public IdentityDTO(Long id, String email) {
-		super();
 		this.id = id;
 		this.email = email;
 	}
@@ -30,4 +29,5 @@ public class IdentityDTO implements Serializable {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
 }

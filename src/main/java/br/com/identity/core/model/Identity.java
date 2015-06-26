@@ -7,7 +7,6 @@ public class Identity {
 	private String email;
 	
 	public Identity(Long id, String email) {
-		super();
 		this.id = id;
 		this.email = email;
 	}

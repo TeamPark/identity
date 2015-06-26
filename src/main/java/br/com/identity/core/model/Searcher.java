@@ -4,5 +4,6 @@ import br.com.identity.core.dto.IdentityDTO;
 
 public interface Searcher {
 
-	IdentityDTO search();
+	IdentityDTO search(String value);
+	
 }
