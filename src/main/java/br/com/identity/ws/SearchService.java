@@ -8,6 +8,7 @@ import javax.jws.WebService;
 import br.com.identity.core.dto.IdentityDTO;
 import br.com.identity.core.model.ByEmail;
 import br.com.identity.core.model.Searcher;
+import br.com.identity.validator.EmailValidator;
 
 @WebService
 public class SearchService {
@@ -16,16 +17,14 @@ public class SearchService {
 	@ByEmail
 	private Searcher searcher;
 	
+	@Inject
+	private EmailValidator emailValidator;
+	
 	@WebMethod
 	public IdentityDTO search(@WebParam(name="email")String email) {
-		validate(email);
+		emailValidator.validate(email);
 		
 		return searcher.search(email);
     }
-
-	private void validate(String email) {
-		if (email == null) {
-			throw new IllegalArgumentException("email inválido");
-		}
-	}
+	
 }
