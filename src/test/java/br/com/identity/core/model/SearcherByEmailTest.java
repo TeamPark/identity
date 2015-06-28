@@ -2,11 +2,9 @@ package br.com.identity.core.model;
 
 import static br.com.identity.util.RandomUtils.getRandomLong;
 import static br.com.identity.util.RandomUtils.getRandomString;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.when;
-import static org.mockito.MockitoAnnotations.initMocks;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -22,13 +20,8 @@ public class SearcherByEmailTest {
 	@Mock
 	private IdentityRepository repository;
 	
-	@Before
-	public void setUp() {
-		initMocks(this);
-	}
-	
 	@Test
-	public void shouldFindIdentityByEmailAndReturnAIdentityDTO() {
+	public void shouldSearchIdentityByEmail() {
 		Long id = getRandomLong();
 		String email = getRandomString();
 		Identity identity = new Identity(id, email);
@@ -37,6 +30,7 @@ public class SearcherByEmailTest {
 		
 		IdentityDTO result = searcher.search(email);
 		
+		assertNotNull(identity);
 		assertEquals(id, result.getId());
 		assertEquals(email, result.getEmail());
 	}
