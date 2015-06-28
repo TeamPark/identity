@@ -6,6 +6,7 @@ Service responsible for managing user identity
 - Install and configure Maven 3.x
 - [Download](http://wildfly.org/downloads/) and unzip Jboss Wildfly 8.2.0.Final
 - Define JBOSS_HOME environment variable
+- Add user permissions on Jboss Wildfly folder
 - Start Jboss server runnning `JBOSS_HOME/bin/standalone.sh`
 - Clone this repository and go to project home folder
 - Run `mvn clean package wildfly:deploy`
