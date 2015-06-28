@@ -12,7 +12,7 @@ import org.mockito.Mock;
 import br.com.identity.core.dto.IdentityDTO;
 import br.com.identity.core.repository.IdentityRepository;
 
-public class SearcherByEmailTest {
+public class SearcherByEmailTest extends SampleBaseTestCase {
 	
 	@InjectMocks
 	private SearcherByEmail searcher;
