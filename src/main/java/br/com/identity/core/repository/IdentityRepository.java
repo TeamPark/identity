@@ -25,5 +25,4 @@ public class IdentityRepository {
 	private Identity convertEntityToModel(final IdentityEntity entity) {
 		return new Identity(entity.getId(), entity.getEmail());
 	}
-	
 }

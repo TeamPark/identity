@@ -12,6 +12,4 @@ import javax.inject.Qualifier;
 @Target({ ElementType.TYPE, ElementType.FIELD, ElementType.PARAMETER })
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-public @interface ByEmail {
-
-}
+public @interface ByEmail {}

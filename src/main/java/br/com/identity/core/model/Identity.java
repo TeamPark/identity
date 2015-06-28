@@ -1,6 +1,5 @@
 package br.com.identity.core.model;
 
-
 public class Identity {
 	
 	private Long id;

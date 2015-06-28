@@ -34,5 +34,4 @@ public class SearcherByEmailTest extends SampleBaseTestCase {
 		assertEquals(id, result.getId());
 		assertEquals(email, result.getEmail());
 	}
-
 }

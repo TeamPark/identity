@@ -35,5 +35,4 @@ public class RandomUtils {
 	public static Long getRandomLong() {
 		return Long.valueOf(new Random().nextInt(999999999) + 1);
 	}
-
 }

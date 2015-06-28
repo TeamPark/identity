@@ -25,6 +25,5 @@ public class SearchService {
 		emailValidator.validate(email);
 		
 		return searcher.search(email);
-    }
-	
+    }	
 }
