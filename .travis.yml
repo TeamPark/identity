@@ -1,1 +1,4 @@
 language: java
+
+notifications:
+  slack: teampark:BzPrZqGsgdi741CPtJCkZE2Q
