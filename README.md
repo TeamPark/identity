@@ -1,5 +1,4 @@
-# Identity
-[![Build Status](https://travis-ci.org/TeamPark/identity.svg?branch=develop)](https://travis-ci.org/TeamPark/identity)
+# Identity [![Build Status](https://travis-ci.org/TeamPark/identity.svg?branch=develop)](https://travis-ci.org/TeamPark/identity)
 Service responsible for managing user identity
 
 ###How to  run
