@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.org/TeamPark/identity.svg?branch=develop)
+[![Build Status](https://travis-ci.org/TeamPark/identity.svg?branch=develop)](https://travis-ci.org/TeamPark/identity)
 # Identity
 Service responsible for managing user identity
 
