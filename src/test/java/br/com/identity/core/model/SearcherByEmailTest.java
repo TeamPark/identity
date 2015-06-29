@@ -11,8 +11,9 @@ import org.mockito.Mock;
 
 import br.com.identity.core.dto.IdentityDTO;
 import br.com.identity.core.repository.IdentityRepository;
+import br.com.identity.util.SampleBaseTest;
 
-public class SearcherByEmailTest extends SampleBaseTestCase {
+public class SearcherByEmailTest extends SampleBaseTest {
 	
 	@InjectMocks
 	private SearcherByEmail searcher;
