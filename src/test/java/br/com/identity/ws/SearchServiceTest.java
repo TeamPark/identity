@@ -49,5 +49,4 @@ public class SearchServiceTest extends SampleBaseTest {
 		
 		verify(searcher, never()).search(invalidEmail);
 	}
-
 }

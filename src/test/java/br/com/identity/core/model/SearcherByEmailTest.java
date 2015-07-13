@@ -11,6 +11,7 @@ import org.mockito.Mock;
 
 import br.com.identity.core.dto.IdentityDTO;
 import br.com.identity.core.repository.IdentityRepository;
+import br.com.identity.core.repository.entity.Identity;
 import br.com.identity.util.SampleBaseTest;
 
 public class SearcherByEmailTest extends SampleBaseTest {
@@ -25,7 +26,9 @@ public class SearcherByEmailTest extends SampleBaseTest {
 	public void shouldSearchIdentityByEmail() {
 		Long id = getRandomLong();
 		String email = getRandomString();
-		Identity identity = new Identity(id, email);
+		Identity identity = new Identity();
+		identity.setId(id);
+		identity.setEmail(email);
 		
 		when(repository.findByEmail(email)).thenReturn(identity);
 		

@@ -4,6 +4,7 @@ import javax.inject.Inject;
 
 import br.com.identity.core.dto.IdentityDTO;
 import br.com.identity.core.repository.IdentityRepository;
+import br.com.identity.core.repository.entity.Identity;
 
 @ByEmail
 public class SearcherByEmail implements Searcher {
@@ -13,7 +14,6 @@ public class SearcherByEmail implements Searcher {
 	
 	@Override
 	public IdentityDTO search(String email) {
-		
 		final Identity identity = repository.findByEmail(email);
 		
 		return convertModelToDTO(identity);

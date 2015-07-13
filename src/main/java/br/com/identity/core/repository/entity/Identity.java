@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="identity")
-public class IdentityEntity implements Serializable {
+public class Identity implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -21,19 +21,6 @@ public class IdentityEntity implements Serializable {
 	@GeneratedValue(strategy= SEQUENCE, generator="identity_id_seq")
 	private Long id;
 	private String email;
-	
-	public IdentityEntity() {
-		
-	}
-	
-	public IdentityEntity(String email) {
-		this.email = email;
-	}
-	
-	public IdentityEntity(Long id, String email) {
-		this.id = id;
-		this.email = email;
-	}
 	
 	public Long getId() {
 		return id;
