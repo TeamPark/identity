@@ -17,4 +17,5 @@ public class Identity {
 	public String getEmail() {
 		return email;
 	}
+	
 }
