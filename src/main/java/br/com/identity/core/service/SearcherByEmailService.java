@@ -1,13 +1,14 @@
-package br.com.identity.core.model;
+package br.com.identity.core.service;
 
 import javax.inject.Inject;
 
-import br.com.identity.core.dto.IdentityDTO;
+import br.com.identity.annotation.ByEmail;
+import br.com.identity.core.entity.Identity;
 import br.com.identity.core.repository.IdentityRepository;
-import br.com.identity.core.repository.entity.Identity;
+import br.com.identity.dto.IdentityDTO;
 
 @ByEmail
-public class SearcherByEmail implements Searcher {
+public class SearcherByEmailService implements SearcherService {
 	
 	@Inject
 	private IdentityRepository repository;

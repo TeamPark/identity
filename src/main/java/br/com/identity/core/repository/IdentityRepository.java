@@ -1,12 +1,11 @@
 package br.com.identity.core.repository;
 
-import br.com.identity.core.repository.entity.Identity;
+import br.com.identity.core.entity.Identity;
 
 public class IdentityRepository extends Repository<Identity> {
 	
 	public Identity findByEmail(String email) {
 		final Identity entity = executeQuery(email);
-		
 		return entity;
 	}
 	

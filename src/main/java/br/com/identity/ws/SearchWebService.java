@@ -5,17 +5,17 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
-import br.com.identity.core.dto.IdentityDTO;
-import br.com.identity.core.model.ByEmail;
-import br.com.identity.core.model.Searcher;
+import br.com.identity.annotation.ByEmail;
+import br.com.identity.core.service.SearcherService;
+import br.com.identity.dto.IdentityDTO;
 import br.com.identity.validator.EmailValidator;
 
 @WebService
-public class SearchService {
+public class SearchWebService {
 	
 	@Inject
 	@ByEmail
-	private Searcher searcher;
+	private SearcherService searcher;
 	
 	@Inject
 	private EmailValidator emailValidator;

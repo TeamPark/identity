@@ -9,18 +9,18 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
-import br.com.identity.core.model.Searcher;
+import br.com.identity.core.service.SearcherService;
 import br.com.identity.util.SampleBaseTest;
 import br.com.identity.validator.EmailValidator;
 
 
-public class SearchServiceTest extends SampleBaseTest {
+public class SearchWebServiceTest extends SampleBaseTest {
 	
 	@InjectMocks
-	private SearchService service;
+	private SearchWebService service;
 	
 	@Mock
-	private Searcher searcher;
+	private SearcherService searcher;
 	
 	@Mock
 	private EmailValidator emailValidator;

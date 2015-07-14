@@ -1,4 +1,4 @@
-package br.com.identity.core.dto;
+package br.com.identity.dto;
 
 import java.io.Serializable;
 

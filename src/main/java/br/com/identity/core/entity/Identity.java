@@ -1,4 +1,4 @@
-package br.com.identity.core.repository.entity;
+package br.com.identity.core.entity;
 
 import static javax.persistence.GenerationType.SEQUENCE;
 

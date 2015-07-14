@@ -5,14 +5,14 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
-import br.com.identity.core.model.CreateIdentity;
+import br.com.identity.core.service.CreateIdentityService;
 import br.com.identity.validator.EmailValidator;
 
 @WebService
-public class CreateService {
+public class CreateWebService {
 	
 	@Inject
-	private CreateIdentity createIdentity;
+	private CreateIdentityService createIdentity;
 	
 	@Inject
 	private EmailValidator emailValidator;

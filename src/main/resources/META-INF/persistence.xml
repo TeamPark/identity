@@ -6,7 +6,7 @@
 	<persistence-unit name="teampark" transaction-type="RESOURCE_LOCAL">
 	<provider>org.hibernate.ejb.HibernatePersistence</provider>
  
-	<class>br.com.identity.core.repository.entity.Identity</class>
+	<class>br.com.identity.core.entity.Identity</class>
  
 	<properties>
 		<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />

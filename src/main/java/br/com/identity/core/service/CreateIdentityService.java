@@ -1,11 +1,11 @@
-package br.com.identity.core.model;
+package br.com.identity.core.service;
 
 import javax.inject.Inject;
 
+import br.com.identity.core.entity.Identity;
 import br.com.identity.core.repository.IdentityRepository;
-import br.com.identity.core.repository.entity.Identity;
 
-public class CreateIdentity {
+public class CreateIdentityService {
 	
 	@Inject
 	IdentityRepository repository;

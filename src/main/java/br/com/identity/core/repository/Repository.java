@@ -15,5 +15,4 @@ public abstract class Repository <T> {
 		
 		entityManager.getTransaction().commit();
 	}
-
 }

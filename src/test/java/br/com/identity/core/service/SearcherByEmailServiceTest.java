@@ -1,4 +1,4 @@
-package br.com.identity.core.model;
+package br.com.identity.core.service;
 
 import static br.com.identity.util.RandomUtils.getRandomLong;
 import static br.com.identity.util.RandomUtils.getRandomString;
@@ -9,15 +9,16 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 
-import br.com.identity.core.dto.IdentityDTO;
+import br.com.identity.core.entity.Identity;
 import br.com.identity.core.repository.IdentityRepository;
-import br.com.identity.core.repository.entity.Identity;
+import br.com.identity.core.service.SearcherByEmailService;
+import br.com.identity.dto.IdentityDTO;
 import br.com.identity.util.SampleBaseTest;
 
-public class SearcherByEmailTest extends SampleBaseTest {
+public class SearcherByEmailServiceTest extends SampleBaseTest {
 	
 	@InjectMocks
-	private SearcherByEmail searcher;
+	private SearcherByEmailService searcher;
 	
 	@Mock
 	private IdentityRepository repository;
