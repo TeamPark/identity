@@ -10,14 +10,14 @@ Service responsible for managing user identity
 - Start Jboss server runnning `JBOSS_HOME/bin/standalone.sh`
 - Clone this repository and go to project home folder
 - Run `mvn clean package wildfly:deploy`
-- Access http://localhost:8080/identity/SearchService?wsdl
+- Access http://localhost:8080/identity/SearchWebService?wsdl
 - [optional] To Undeploy application run `wildfly:undeploy`
 
 ###TODO
-- Test CDI
-- Configure Database integration
+~~- Test CDI~~
+~~- Configure Database integration~~
 - Test JPA and JTA
-- Unit Tests
+~~- Unit Tests~~
 - Integration Tests
 
 ## License
