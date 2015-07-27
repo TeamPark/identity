@@ -1,5 +1,6 @@
 package br.com.identity.ws;
 
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -11,6 +12,7 @@ import br.com.identity.dto.IdentityDTO;
 import br.com.identity.validator.EmailValidator;
 
 @WebService
+@Stateless
 public class SearchWebService {
 	
 	@Inject
@@ -25,5 +27,6 @@ public class SearchWebService {
 		emailValidator.validate(email);
 		
 		return searcher.search(email);
-    }	
+    }
+	
 }
