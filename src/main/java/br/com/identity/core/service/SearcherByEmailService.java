@@ -17,6 +17,10 @@ public class SearcherByEmailService implements SearcherService {
 	public IdentityDTO search(String email) {
 		final Identity identity = repository.findByEmail(email);
 		
+		if (identity == null) {
+			return null;
+		}
+		
 		return convertModelToDTO(identity);
 	}
 
