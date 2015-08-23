@@ -1,7 +1,7 @@
 # Identity [![Build Status](https://travis-ci.org/TeamPark/identity.svg?branch=develop)](https://travis-ci.org/TeamPark/identity)
 Service responsible for managing user identity
 
-###How to  run
+### How to  run
 - Install and configure Java jdk 1.7+
 - Install and configure Maven 3.x
 - [Download](http://wildfly.org/downloads/) and unzip Jboss Wildfly 8.2.0.Final
@@ -13,7 +13,7 @@ Service responsible for managing user identity
 - Access http://localhost:8080/identity/SearchWebService?wsdl
 - [optional] To Undeploy application run `wildfly:undeploy`
 
-###TODO
+### TODO
 ~~- Test CDI~~
 ~~- Configure Database integration~~
 - Test JPA and JTA
